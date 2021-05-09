@@ -1,0 +1,26 @@
+---
+vyos:
+  ipv4_default:
+    bgp_route: "show bgp ipv4 {target}"
+    bgp_aspath: "show bgp ipv4 regexp {target}"
+    bgp_community: "show bgp ipv4 community {target}"
+    ping: "ping {target}"
+    traceroute: "traceroute {target}"
+  ipv6_default:
+    bgp_route: "show bgp ipv6 {target}"
+    bgp_aspath: "show bgp ipv6 regexp {target}"
+    bgp_community: "show bgp ipv6 community {target}"
+    ping: "ping {target}"
+    traceroute: "traceroute {target}"
+  ipv4_vpn:
+    bgp_route: "show bgp ipv4 {target} vrf {vrf}"
+    bgp_aspath: "show bgp ipv4 regexp {target} vrf {vrf}"
+    bgp_community: "show bgp ipv4 community {target} vrf {vrf}"
+    ping: "ping {target} vrf {vrf}"
+    traceroute: "traceroute {target} vrf {vrf}"
+  ipv6_vpn:
+    bgp_route: "show bgp ipv6 {target} vrf {vrf}"
+    bgp_aspath: "show bgp ipv6 regexp {target} vrf {vrf}"
+    bgp_community: "show bgp ipv6 community {target} vrf {vrf}"
+    ping: "ping {target} vrf {vrf}"
+    traceroute: "traceroute {target} vrf {vrf}"

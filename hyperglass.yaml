@@ -1,0 +1,13 @@
+---
+debug: true
+primary_asn: 64932
+org_name: 'Engyak Lab'
+site_title: 'Engyak'
+site_description: 'Engyak Network Looking Glass'
+listen_address: '1.1.1.1'
+listen_port: 8001
+
+logging:
+  directory: /var/log
+  format: text
+  max_size: 50MB

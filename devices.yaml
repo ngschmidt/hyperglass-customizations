@@ -1,0 +1,21 @@
+--- 
+routers: 
+  - 
+    address: "1.1.1.1"
+    credential: 
+      password: password
+      username: vyos
+    name: "Fabric Sensor"
+    network: 
+      display_name: AS64932
+      name: "Lab Fabric"
+    nos: vyos
+    port: 22
+    vrfs: 
+      - 
+        default: true
+        ipv4: 
+          source_address: "10.7.2.254"
+        ipv6: 
+          source_address: "dea::254"
+        name: global
