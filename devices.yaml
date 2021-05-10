@@ -15,7 +15,9 @@ routers:
       - 
         default: true
         ipv4: 
+          force_cidr: false
           source_address: "10.7.2.254"
-        ipv6: 
+        ipv6:
+          force_cidr: false
           source_address: "dea::254"
         name: global
